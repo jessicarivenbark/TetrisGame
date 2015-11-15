@@ -14,7 +14,9 @@ public class InfoPanel extends JPanel{
 		setPreferredSize(new Dimension(150, 300));
 		setLayout(new BorderLayout());
 		nextShape = new JLabel("Next Shape:");
-		score = new JLabel("Score:  0");
+		nextShape.setHorizontalAlignment(JLabel.CENTER);
+		score = new JLabel("Score:");
+		score.setHorizontalAlignment(JLabel.CENTER);
 		pause = new JButton("Pause/Play");
 		add(nextShape, BorderLayout.NORTH);
 		add(score, BorderLayout.CENTER);
